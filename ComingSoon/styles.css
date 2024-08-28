@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Optima, sans-serif;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #5a4862;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 50px); /* Adjusts for footer height */
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 45%;
+  max-width: 1200px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Shared styles for both buttons */
+.subscribe-form button,
+.social-media button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #5dd39e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.subscribe-form button:hover,
+.social-media button:hover {
+  background-color: #bde783;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.7rem; /* Smaller font size */
+  color: #5a4862;
+  padding: 5px 20px; /* Reduced padding to move text up */
+  margin-bottom: 10px; /* Optional: Margin at the bottom */
+  line-height: 1.4; /* Adjusted line-height */
+}
+
+.footer p {
+  font-size: medium;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    width: 80%;
+    max-width: 1500px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .subscribe-form input[type="email"] {
+    max-width: 100%;
+  }
+}
